@@ -41,5 +41,6 @@ module.exports = {
 
 - [x] Minimum notification
 - [x] Provide option to configure Slack's incoming webhook URL
-- [ ] Report audit details
+- [x] Report summary by rules
 - [ ] Decorate notification using [Block Kit](https://api.slack.com/block-kit)
+- [ ] Options to specify events of notification
