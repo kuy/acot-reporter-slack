@@ -16,6 +16,13 @@ $ npm install --save acot-reporter-slack
 
 ```javascript
 module.exports = {
-  reporter: "slack",
+  reporter: {
+    use: "slack",
+    with: {
+      url: "https://hooks.slack.com/services/XXX/XXX/XXX",
+    },
+  },
 };
 ```
+
+- `url`: URL of Slack's incoming webhook _(Required)_

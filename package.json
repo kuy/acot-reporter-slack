@@ -15,6 +15,7 @@
   "dependencies": {
     "@acot/module-loader": "0.0.6",
     "@acot/reporter": "0.0.7",
+    "@acot/schema-validator": "0.0.5",
     "@slack/webhook": "^6.0.0"
   },
   "devDependencies": {
