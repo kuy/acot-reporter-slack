@@ -25,4 +25,4 @@ module.exports = {
 };
 ```
 
-- `url`: URL of Slack's incoming webhook _(Required)_
+- `url`: URL of Slack's incoming webhook **(Required)**
