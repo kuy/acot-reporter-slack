@@ -1,25 +1,21 @@
 import { createReporterFactory } from "@acot/reporter";
+import { IncomingWebhook } from "@slack/webhook";
 
-export default createReporterFactory(() => (runner) => {
-  runner.on("setup:start", async () => {});
+const url = "";
 
-  runner.on("setup:complete", async () => {});
+export default createReporterFactory(() => async (runner) => {
+  const webhook = new IncomingWebhook(url);
 
-  runner.on("connect:start", async () => {});
+  await webhook.send(
+    `Audit by acot (core: ${runner.version.core}, runner: ${runner.version.self})`
+  );
 
-  runner.on("connect:complete", async () => {});
-
-  runner.on("collect:start", async () => {});
-
-  runner.on("collect:complete", async () => {});
-
-  runner.on("launch:start", async () => {});
-
-  runner.on("launch:complete", async () => {});
-
-  runner.on("audit:start", async () => {});
-
-  runner.on("test:complete", async () => {});
-
-  runner.on("audit:complete", async () => {});
+  runner.on("audit:complete", async ([summary]) => {
+    const body = summary.results
+      .map((result) => {
+        return `${result.url}:  :white_check_mark: ${result.passCount}  :x: ${result.errorCount}  :warning: ${result.warningCount}`;
+      })
+      .join("\n");
+    await webhook.send(body);
+  });
 });

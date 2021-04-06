@@ -2,7 +2,9 @@
 
 A Slack reporter for [acot](https://github.com/acot-a11y/acot).
 
-## Installation
+## Usage
+
+### Installation
 
 Install via npm:
 
@@ -10,7 +12,7 @@ Install via npm:
 $ npm install --save acot-reporter-slack
 ```
 
-## Usage
+### Configuration
 
 ```javascript
 module.exports = {

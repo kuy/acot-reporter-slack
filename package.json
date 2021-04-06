@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "@acot/module-loader": "0.0.6",
-    "@acot/reporter": "0.0.7"
+    "@acot/reporter": "0.0.7",
+    "@slack/webhook": "^6.0.0"
   },
   "devDependencies": {
     "@acot/tsconfig": "0.1.0",
