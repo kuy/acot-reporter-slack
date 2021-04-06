@@ -1,6 +1,6 @@
 {
   "name": "acot-reporter-slack",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Slack reporter for acot",
   "license": "MIT",
   "author": "Yuki Kodama <endflow.net@gmail.com>",
