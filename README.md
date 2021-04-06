@@ -44,3 +44,9 @@ module.exports = {
 - [x] Report summary by rules
 - [ ] Decorate notification using [Block Kit](https://api.slack.com/block-kit)
 - [ ] Options to specify events of notification
+
+### Release
+
+1. Bump version in `package.json`
+2. Commit with message `Release x.x.x` and push to `main` branch
+3. GitHub Actions publishes new version to NPM automatically
