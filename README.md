@@ -26,3 +26,12 @@ module.exports = {
 ```
 
 - `url`: URL of Slack's incoming webhook **(Required)**
+
+## Development
+
+### TODOs
+
+- [x] Minimum notification
+- [x] Provide option to configure Slack's incoming webhook URL
+- [ ] Report audit details
+- [ ] Decorate notification using [Block Kit](https://api.slack.com/block-kit)
