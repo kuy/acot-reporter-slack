@@ -1,6 +1,7 @@
 # acot-reporter-slack
 
 <a href="https://www.npmjs.com/package/acot-reporter-slack"><img alt="NPM Status" src="https://img.shields.io/npm/v/acot-reporter-slack.svg?style=flat"></a>
+[![CI](https://github.com/kuy/acot-reporter-slack/actions/workflows/ci.yml/badge.svg)](https://github.com/kuy/acot-reporter-slack/actions/workflows/ci.yml)
 
 A Slack reporter for [acot](https://github.com/acot-a11y/acot).
 
